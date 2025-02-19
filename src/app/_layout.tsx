@@ -11,6 +11,10 @@ export default function RootLayout() {
         name="chat-with-cat"
         options={{ title: "Chat with Cat", headerShown: true }}
       />
+      <Stack.Screen
+        name="meditations"
+        options={{ title: "Meditations", headerShown: true }}
+      />
     </Stack>
   );
 }

@@ -12,7 +12,7 @@ export const renderBubble = (props: any) => (
         backgroundColor: "#df939d", // darkish salmon pink
       },
       left: {
-        backgroundColor: "#f0f0f0", // Custom color for bot messages
+        backgroundColor: "#f0f0f0", // graycolor for bot messages
       },
     }}
     textStyle={{
