@@ -51,7 +51,7 @@ export const renderAvatar = (props: any) => {
         }}
       >
         <Image
-          source={require("@/assets/avatar/pinkCat.jpeg")}
+          source={require("@assets/avatar/pinkCat.jpeg")}
           style={{ width: "100%", height: "100%" }}
           resizeMode="cover"
         />

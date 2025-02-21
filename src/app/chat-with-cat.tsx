@@ -6,8 +6,8 @@ import {
   renderInputToolbar,
   renderAvatar,
   renderSendIcon,
-} from "../components/chat-with-cat-component";
-import { useBotResponse } from "../hooks/useBotResponse";
+} from "@components/chat-with-cat-component";
+import { useBotResponse } from "@hooks/useBotResponse";
 
 const initialMessages = [
   {
@@ -17,7 +17,7 @@ const initialMessages = [
     user: {
       _id: 2,
       name: "Bot",
-      avatar: require("@/assets/avatar/pinkCat.jpeg"),
+      avatar: require("@assets/avatar/pinkCat.jpeg"),
     },
   },
 ];
@@ -75,7 +75,7 @@ export default function ChatScreen() {
 
   return (
     <ImageBackground
-      source={require("@/assets/background/Designer4.3.png")}
+      source={require("@assets/background/Designer4.3.png")}
       style={styles.backgroundImage}
       resizeMode="cover"
     >

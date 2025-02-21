@@ -15,6 +15,14 @@ export default function RootLayout() {
         name="meditations"
         options={{ title: "Meditations", headerShown: true }}
       />
+      <Stack.Screen
+        name="meditation/[id]"
+        options={{
+          title: "Meditation details",
+          headerShown: true,
+          animation: "slide_from_bottom",
+        }}
+      />
     </Stack>
   );
 }

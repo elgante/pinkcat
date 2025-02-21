@@ -44,7 +44,7 @@ export const useBotResponse = (
           user: {
             _id: 2,
             name: "Bot",
-            avatar: require("@/assets/avatar/pinkCat.jpeg"),
+            avatar: require("@assets/avatar/pinkCat.jpeg"),
           },
         };
 
