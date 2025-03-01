@@ -6,7 +6,7 @@ import {
   renderInputToolbar,
   renderAvatar,
   renderSendIcon,
-} from "@components/chat-with-cat-component";
+} from "@/components/ChatWithCatUI";
 import { useBotResponse } from "@hooks/useBotResponse";
 
 const initialMessages = [

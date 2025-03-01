@@ -7,15 +7,17 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Slider from "@react-native-community/slider";
 import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
-import audio from "@assets/meditations-audio/audio1.mp3";
+//import audio from "@assets/meditations-audio/audio1.mp3";
 
 import { SafeAreaView } from "react-native-safe-area-context";
+import AnimatedBackground from "@components/AnimatedBackground";
 
 export default function MeditationDetails() {
   const { id } = useLocalSearchParams<{ id: string }>();
 
-  const player = useAudioPlayer(audio);
-  const status = useAudioPlayerStatus(player);
+  // const player = useAudioPlayer({
+  //   uri: " https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+  // });
 
   const formatCurrentTime = (milliseconds: number) => {
     const minutes = Math.floor(milliseconds / 60000);
@@ -28,8 +30,12 @@ export default function MeditationDetails() {
   if (!meditation) {
     return <Text className="text-xl">Meditation not found</Text>;
   }
+  const player = useAudioPlayer(meditation.audio);
+  const status = useAudioPlayerStatus(player);
+
   return (
     <SafeAreaView className="bg-rose-200 flex-1 p-2">
+      <AnimatedBackground />
       {/* HEADER */}
       <View className=" flex-1">
         <View className=" flex-1">

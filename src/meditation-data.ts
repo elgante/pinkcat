@@ -6,6 +6,7 @@ export const meditations: Meditation[] = [
     title: "60 Seconds of Mindfulness",
     duration: 1,
     type: "audio",
+    audio: require("@assets/meditations-audio/audio1.mp3"),
     pro: false,
   },
   {
